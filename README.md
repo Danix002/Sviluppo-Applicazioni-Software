@@ -9,12 +9,12 @@ Pattern Grasp svolti:
   - Pattern Controller.
 
 Pattern GoF:
-  - Pattern Strategy;
-  - Pattern Visitor;
-  - Pattern Abstract Factory;
-  - Pattern Singleton;
-  - Pattern State;
-  - Pattern Adapter;
-  - Pattern Composite;
-  - Pattern Decorator;
-  - Pattern Observer.
+  - Pattern Strategy (comportamentale);
+  - Pattern Visitor (comportamentale);
+  - Pattern Abstract Factory (creazionale);
+  - Pattern Singleton (creazionale);
+  - Pattern State (comportamentale);
+  - Pattern Adapter (strutturale);
+  - Pattern Composite (strutturale);
+  - Pattern Decorator (strutturale);
+  - Pattern Observer (comportamentale).
