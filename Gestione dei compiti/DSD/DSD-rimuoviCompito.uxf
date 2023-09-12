@@ -1,0 +1,52 @@
+<diagram program="umletino" version="15.1"><zoom_level>7</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLGeneric</id><coordinates><x>273</x><y>28</y><w>189</w><h>35</h></coordinates><panel_attributes>CatERingAppManager.eventManager:
+EventManager</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>105</x><y>14</y><w>42</w><h>77</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>119</x><y>35</y><w>21</w><h>497</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;690</additional_attributes></element><element><id>Relation</id><coordinates><x>364</x><y>56</y><w>21</w><h>476</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;660</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>364</x><y>91</y><w>14</w><h>399</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>0</x><y>154</y><w>1071</w><h>350</h></coordinates><panel_attributes>alt 
+[s == null]
+--
+
+
+-.
+
+
+
+
+-.
+
+
+
+
+-.
+
+
+
+
+
+
+
+
+
+
+
+fontsize=11
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>119</x><y>161</y><w>259</w><h>28</h></coordinates><panel_attributes>lt=&lt;.
+throw SummarySheetException</panel_attributes><additional_attributes>10;20;350;20</additional_attributes></element><element><id>Text</id><coordinates><x>7</x><y>203</y><w>112</w><h>35</h></coordinates><panel_attributes>[s.length &lt; 2]
+style=wordwrap
+fontsize=11</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>119</x><y>203</y><w>259</w><h>28</h></coordinates><panel_attributes>lt=&lt;.
+throw SummarySheetException</panel_attributes><additional_attributes>10;20;350;20</additional_attributes></element><element><id>Text</id><coordinates><x>7</x><y>252</y><w>112</w><h>35</h></coordinates><panel_attributes>[!s.moficable]
+style=wordwrap
+fontsize=11</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>119</x><y>252</y><w>259</w><h>28</h></coordinates><panel_attributes>lt=&lt;.
+throw SummarySheetException</panel_attributes><additional_attributes>10;20;350;20</additional_attributes></element><element><id>Relation</id><coordinates><x>119</x><y>84</y><w>259</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+removeTask(serv, task)</panel_attributes><additional_attributes>350;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>560</x><y>28</y><w>63</w><h>35</h></coordinates><panel_attributes>serv: 
+Service</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>819</x><y>56</y><w>21</w><h>476</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;660</additional_attributes></element><element><id>Relation</id><coordinates><x>581</x><y>56</y><w>21</w><h>476</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;660</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>777</x><y>28</y><w>98</w><h>35</h></coordinates><panel_attributes>s: 
+SummarySheet</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>371</x><y>98</y><w>231</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+getSummarySheet()</panel_attributes><additional_attributes>310;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>371</x><y>119</y><w>231</w><h>28</h></coordinates><panel_attributes>lt=&lt;.
+s</panel_attributes><additional_attributes>10;20;310;20</additional_attributes></element><element><id>Relation</id><coordinates><x>371</x><y>322</y><w>462</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+removeTask(task)</panel_attributes><additional_attributes>640;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>819</x><y>315</y><w>14</w><h>49</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>931</x><y>28</y><w>133</w><h>35</h></coordinates><panel_attributes>receivers:
+EventEventReceiver
+
+fg=magenta</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>987</x><y>56</y><w>21</w><h>476</h></coordinates><panel_attributes>lt=.
+fg=magenta</panel_attributes><additional_attributes>10;10;10;660</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>371</x><y>427</y><w>14</w><h>49</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>371</x><y>406</y><w>154</w><h>49</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+notifyTaskRemoved(task)</panel_attributes><additional_attributes>20;50;60;50;60;10;10;10</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>259</x><y>434</y><w>770</w><h>49</h></coordinates><panel_attributes>for each
+rec in receivers
+fg=magenta</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>371</x><y>448</y><w>630</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+updateTaskRemoved(task)</panel_attributes><additional_attributes>880;20;17;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>987</x><y>455</y><w>14</w><h>14</h></coordinates><panel_attributes>
+fg=magenta</panel_attributes><additional_attributes></additional_attributes></element></diagram>

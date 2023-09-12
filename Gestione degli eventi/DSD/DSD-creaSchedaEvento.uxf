@@ -1,0 +1,63 @@
+<diagram program="umletino" version="15.1"><zoom_level>6</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLGeneric</id><coordinates><x>234</x><y>12</y><w>162</w><h>30</h></coordinates><panel_attributes>CatERingAppManager.eventManager:
+EventManager</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>54</x><y>0</y><w>36</w><h>66</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>66</x><y>18</y><w>18</w><h>822</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;1350</additional_attributes></element><element><id>Relation</id><coordinates><x>312</x><y>36</y><w>18</w><h>804</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;1320</additional_attributes></element><element><id>Relation</id><coordinates><x>66</x><y>60</y><w>258</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+createEventCard(luogo, inizio, fine, servizi_richiesti, durata,
+partecipanti, tipo_evento, richieste)</panel_attributes><additional_attributes>410;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>312</x><y>66</y><w>12</w><h>738</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>318</x><y>168</y><w>108</w><h>48</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+create(luogo, inizio,
+fine, servizi_richiesti, durata,
+partecipanti,
+tipo_evento, richieste)</panel_attributes><additional_attributes>160;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>414</x><y>162</y><w>54</w><h>30</h></coordinates><panel_attributes>e:
+:Event</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>432</x><y>186</y><w>18</w><h>654</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;1070</additional_attributes></element><element><id>Relation</id><coordinates><x>318</x><y>690</y><w>108</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+setCurrentEvent(e)</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>0</x><y>120</y><w>978</w><h>690</h></coordinates><panel_attributes>alt 
+[!user.isManager()]
+
+--
+
+-.
+
+
+fontsize=11
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>66</x><y>126</y><w>258</w><h>24</h></coordinates><panel_attributes>lt=&lt;.
+throw UseCaseLogicException</panel_attributes><additional_attributes>10;20;410;20</additional_attributes></element><element><id>Relation</id><coordinates><x>318</x><y>60</y><w>534</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+getCurrentUser()</panel_attributes><additional_attributes>870;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>318</x><y>72</y><w>528</w><h>24</h></coordinates><panel_attributes>lt=&lt;.
+user</panel_attributes><additional_attributes>10;20;860;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>708</x><y>12</y><w>144</w><h>30</h></coordinates><panel_attributes>CatERingAppManager.userManager:
+UserManager
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>834</x><y>36</y><w>18</w><h>804</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;1320</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>834</x><y>78</y><w>12</w><h>12</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>906</x><y>36</y><w>18</w><h>798</h></coordinates><panel_attributes>lt=.
+fg=magenta</panel_attributes><additional_attributes>10;10;10;1310</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>906</x><y>762</y><w>12</w><h>12</h></coordinates><panel_attributes>
+fg=magenta</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>858</x><y>12</y><w>114</w><h>30</h></coordinates><panel_attributes>receivers:
+EventEventReceiver
+
+fg=magenta</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>246</x><y>750</y><w>696</w><h>42</h></coordinates><panel_attributes>for each
+rec in receivers
+fg=magenta</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>324</x><y>756</y><w>594</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+updateEventCardCreated(e)</panel_attributes><additional_attributes>970;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>318</x><y>732</y><w>12</w><h>42</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>318</x><y>720</y><w>138</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+notifyEventCardCreated(e)</panel_attributes><additional_attributes>20;40;60;40;60;10;10;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>432</x><y>192</y><w>12</w><h>498</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>438</x><y>198</y><w>102</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.luogo = luogo</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>438</x><y>228</y><w>96</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.inizio = inizio</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>438</x><y>258</y><w>90</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.fine = fine</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>438</x><y>288</y><w>108</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.durata = durata</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>438</x><y>318</y><w>144</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.partecipanti = partecipanti</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>438</x><y>348</y><w>114</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.tipo = tipo_evento</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>438</x><y>378</y><w>120</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.richieste = richieste</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>336</x><y>528</y><w>474</w><h>156</h></coordinates><panel_attributes>for each
+serv in servizi_richiesti
+--
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>576</x><y>540</y><w>54</w><h>30</h></coordinates><panel_attributes>servizio:
+:Service</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>594</x><y>564</y><w>18</w><h>276</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;440</additional_attributes></element><element><id>Relation</id><coordinates><x>438</x><y>408</y><w>90</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.scheda = si</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>438</x><y>438</y><w>96</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.inCorso = no</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>438</x><y>468</y><w>108</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.terminato = no</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>438</x><y>540</y><w>150</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+create(serv)</panel_attributes><additional_attributes>230;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>438</x><y>552</y><w>150</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.
+servizio</panel_attributes><additional_attributes>10;20;230;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>594</x><y>570</y><w>12</w><h>96</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>570</y><w>102</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.tipo = serv.tipo</panel_attributes><additional_attributes>10;30;40;30;40;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>594</y><w>138</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.dataInizio = serv.dataInizio
+</panel_attributes><additional_attributes>10;30;40;30;40;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>618</y><w>132</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.dataFine = serv.dataFine
+</panel_attributes><additional_attributes>10;30;40;30;40;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>642</y><w>108</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.confermato = no
+</panel_attributes><additional_attributes>10;30;40;30;40;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>438</x><y>666</y><w>324</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+add(servizio)</panel_attributes><additional_attributes>520;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>714</x><y>498</y><w>84</w><h>24</h></coordinates><panel_attributes>Services:
+ArrayList&lt;Service&gt;
+fontsize=12</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>438</x><y>498</y><w>288</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.
+create</panel_attributes><additional_attributes>460;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>750</x><y>516</y><w>18</w><h>324</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;520</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>750</x><y>654</y><w>12</w><h>36</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element></diagram>

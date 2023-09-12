@@ -1,0 +1,61 @@
+<diagram program="umletino" version="15.1"><zoom_level>6</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLGeneric</id><coordinates><x>294</x><y>48</y><w>162</w><h>30</h></coordinates><panel_attributes>CatERingAppManager.eventManager:
+EventManager</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>150</x><y>36</y><w>36</w><h>66</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>162</x><y>54</y><w>18</w><h>426</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;690</additional_attributes></element><element><id>Relation</id><coordinates><x>372</x><y>72</y><w>18</w><h>408</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;660</additional_attributes></element><element><id>Relation</id><coordinates><x>162</x><y>96</y><w>222</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+openSheetOnModify(serv)</panel_attributes><additional_attributes>350;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>372</x><y>102</y><w>12</w><h>342</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>60</x><y>156</y><w>744</w><h>300</h></coordinates><panel_attributes>alt 
+[!user.isChef()]
+--
+
+-.
+
+
+
+-.
+
+
+
+-.
+
+
+
+-.
+
+
+
+-.
+
+
+
+-.
+
+
+
+
+
+
+
+
+fontsize=11
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>162</x><y>390</y><w>222</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.
+s</panel_attributes><additional_attributes>10;20;347;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>522</x><y>48</y><w>54</w><h>30</h></coordinates><panel_attributes>serv:
+:Service</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>546</x><y>72</y><w>18</w><h>408</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;660</additional_attributes></element><element><id>Relation</id><coordinates><x>378</x><y>96</y><w>180</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+getSummarySheet()</panel_attributes><additional_attributes>280;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>546</x><y>102</y><w>12</w><h>36</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>378</x><y>120</y><w>180</w><h>24</h></coordinates><panel_attributes>lt=&lt;.
+s</panel_attributes><additional_attributes>10;20;280;20</additional_attributes></element><element><id>Relation</id><coordinates><x>162</x><y>246</y><w>222</w><h>24</h></coordinates><panel_attributes>lt=&lt;.
+throw SummarySheetException</panel_attributes><additional_attributes>10;20;350;20</additional_attributes></element><element><id>Relation</id><coordinates><x>162</x><y>276</y><w>222</w><h>24</h></coordinates><panel_attributes>lt=&lt;.
+throw ServiceException</panel_attributes><additional_attributes>10;20;350;20</additional_attributes></element><element><id>Text</id><coordinates><x>60</x><y>300</y><w>96</w><h>30</h></coordinates><panel_attributes>[!s.isReferTo(serv)]
+style=wordwrap
+fontsize=11</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>162</x><y>306</y><w>222</w><h>24</h></coordinates><panel_attributes>lt=&lt;.
+throw ServiceException</panel_attributes><additional_attributes>10;20;350;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>612</x><y>48</y><w>66</w><h>30</h></coordinates><panel_attributes>s:
+SummarySheet</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>636</x><y>72</y><w>18</w><h>408</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;660</additional_attributes></element><element><id>Relation</id><coordinates><x>162</x><y>162</y><w>222</w><h>24</h></coordinates><panel_attributes>lt=&lt;.
+throw UseCaseLogicException</panel_attributes><additional_attributes>10;20;350;20</additional_attributes></element><element><id>Text</id><coordinates><x>60</x><y>246</y><w>96</w><h>30</h></coordinates><panel_attributes>[s == null]
+style=wordwrap
+fontsize=11</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>60</x><y>198</y><w>96</w><h>30</h></coordinates><panel_attributes>[!menu.isApproved()]
+style=wordwrap
+fontsize=11</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>60</x><y>222</y><w>96</w><h>30</h></coordinates><panel_attributes>[!e.isInCharge(user)]
+style=wordwrap
+fontsize=11</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>162</x><y>192</y><w>222</w><h>24</h></coordinates><panel_attributes>lt=&lt;.
+throw MenuException</panel_attributes><additional_attributes>10;20;350;20</additional_attributes></element><element><id>Relation</id><coordinates><x>162</x><y>222</y><w>222</w><h>24</h></coordinates><panel_attributes>lt=&lt;.
+throw EventException</panel_attributes><additional_attributes>10;20;350;20</additional_attributes></element><element><id>Text</id><coordinates><x>60</x><y>276</y><w>96</w><h>30</h></coordinates><panel_attributes>[serv == null]
+style=wordwrap
+fontsize=11</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>636</x><y>342</y><w>12</w><h>42</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>378</x><y>348</y><w>270</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+setModificable(true)</panel_attributes><additional_attributes>430;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>642</x><y>360</y><w>108</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.modificable = true
+</panel_attributes><additional_attributes>10;30;40;30;40;10;10;10</additional_attributes></element></diagram>

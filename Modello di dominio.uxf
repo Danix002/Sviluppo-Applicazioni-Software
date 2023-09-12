@@ -1,0 +1,212 @@
+<diagram program="umletino" version="15.1"><zoom_level>5</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>380</x><y>205</y><w>90</w><h>85</h></coordinates><panel_attributes>Menù
+--
+titolo: testo
+pubblicato: sì/no
+richiede cuoco: sì/no
+piatti caldi: sì/no
+richiede cucina: sì/no
+buffet: sì/no
+finger food: sì/no
+approvato: sì/no
+layer=-1
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>570</x><y>155</y><w>70</w><h>45</h></coordinates><panel_attributes>Sezione
+--
+nome: testo
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>585</x><y>445</y><w>55</w><h>35</h></coordinates><panel_attributes>Ricettario
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>710</x><y>255</y><w>65</w><h>45</h></coordinates><panel_attributes>Ricetta
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>570</x><y>240</y><w>70</w><h>55</h></coordinates><panel_attributes>Voce
+--
+descrizione: testo
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>250</x><y>295</y><w>140</w><h>105</h></coordinates><panel_attributes>Evento
+--
+durata: numero
+inizio: testo
+fine: testo
+luogo: testo
+partecipanti: numero
+numero di servizi: numero
+tipo: testo
+richieste: testo
+scheda: si/no
+note: testo
+inCorso: si/no
+terminato: si/no</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>415</x><y>160</y><w>165</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+contiene ^
+m2=0..n
+m1=1
+</panel_attributes><additional_attributes>10;90;10;20;310;20</additional_attributes></element><element><id>Relation</id><coordinates><x>605</x><y>195</y><w>50</w><h>55</h></coordinates><panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;
+
+
+appartiene ^
+m2=0..1
+m1=0..n
+
+</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>465</x><y>255</y><w>115</w><h>25</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+appartiene &gt;
+m2=0..n
+m1=0..1
+</panel_attributes><additional_attributes>10;20;210;20</additional_attributes></element><element><id>Relation</id><coordinates><x>195</x><y>235</y><w>295</w><h>495</h></coordinates><panel_attributes>lt=-
+in uso in v
+m2=0..n
+m1=0..1
+</panel_attributes><additional_attributes>370;10;10;10;10;960;570;960</additional_attributes></element><element><id>Relation</id><coordinates><x>635</x><y>260</y><w>85</w><h>25</h></coordinates><panel_attributes>lt=-
+fa riferimento a &gt;
+m2=0..n
+m1=1</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>610</x><y>370</y><w>55</w><h>85</h></coordinates><panel_attributes>lt=-
+
+è contenuta v
+m2=1
+m1=0..n
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>UMLClass</id><coordinates><x>295</x><y>415</y><w>70</w><h>30</h></coordinates><panel_attributes>Chef
+--
+nome: testo</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>395</y><w>75</w><h>55</h></coordinates><panel_attributes>lt=-
+m1=0..n
+
+
+assegnato a v
+
+m2=1
+
+</panel_attributes><additional_attributes>50;10;50;60;10;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>450</y><w>105</w><h>35</h></coordinates><panel_attributes>Cuoco
+--
+nome: testo</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>675</x><y>650</y><w>105</w><h>35</h></coordinates><panel_attributes>Foglio Riepilogativo
+--
+ordinato: si/no
+modificabile: si/no</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>600</y><w>105</w><h>50</h></coordinates><panel_attributes>Compito
+--
+porzioni/quantità: numero 
+tempo stimato: numero
+da preparare: si/no 
+completato: si/no</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>610</y><w>105</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=1
+                          è contenuto &gt;
+m2=1..n
+                              </panel_attributes><additional_attributes>190;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>675</y><w>105</w><h>60</h></coordinates><panel_attributes>Servizio
+--
+tipologia : testo
+dataInizio: testo
+dataFine: testo
+confermato: si/no
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>680</y><w>105</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=       0..1
+riferito &gt;
+m2=1
+
+
+ </panel_attributes><additional_attributes>190;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>565</x><y>370</y><w>50</w><h>240</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=1
+  contiene ^</panel_attributes><additional_attributes>10;460;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>705</x><y>390</y><w>80</w><h>35</h></coordinates><panel_attributes>Preparazione
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>455</y><w>130</w><h>155</h></coordinates><panel_attributes>lt=-
+m1=  0..n
+è assegnato &gt;
+m2=0..1
+   </panel_attributes><additional_attributes>10;10;230;290</additional_attributes></element><element><id>UMLClass</id><coordinates><x>345</x><y>620</y><w>85</w><h>40</h></coordinates><panel_attributes>Tabellone dei Turni
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>335</x><y>515</y><w>105</w><h>60</h></coordinates><panel_attributes>Turno
+--
+data: testo
+luogo di svolgimento: testo
+oraInizio: testo
+oraFine: testo
+turno preparatorio: si/no
+turno di servizio: si/no</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>530</x><y>335</y><w>135</w><h>40</h></coordinates><panel_attributes>Mansione di cucina
+--
+nome: testo
+ingredienti: testo
+istruzioni: testo</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>345</y><w>95</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;170;10;170;90</additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>295</y><w>95</w><h>65</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;110;170;110;170;10</additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>570</y><w>55</w><h>60</h></coordinates><panel_attributes>lt=-
+m1=0..n
+è contenuto v
+m2=1
+    </panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>415</x><y>570</y><w>75</w><h>40</h></coordinates><panel_attributes>lt=-
+m1=     0..n
+              svolto ^
+m2=1..n
+</panel_attributes><additional_attributes>10;10;130;60</additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>395</y><w>230</w><h>315</h></coordinates><panel_attributes>lt=-
+m1=1..n
+m2=1
+prevede &gt;</panel_attributes><additional_attributes>440;600;15;600;20;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>400</x><y>300</y><w>105</w><h>45</h></coordinates><panel_attributes>Evento Ricorrente
+--
+dataInizio: testo
+dataFine: testo
+periodicità: numero
+numero di ricorrenze: numero</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>285</y><w>215</w><h>165</h></coordinates><panel_attributes>lt=-
+m1=0..n
+
+
+è proprietario di ^
+m2=1
+
+</panel_attributes><additional_attributes>220;10;310;10;310;300;10;300</additional_attributes></element><element><id>Relation</id><coordinates><x>385</x><y>340</y><w>75</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+
+compone &gt;
+m2=2..n
+m1=0..1
+</panel_attributes><additional_attributes>70;10;70;80;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>625</x><y>740</y><w>105</w><h>35</h></coordinates><panel_attributes>Personale di servizio
+--
+nome: testo</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>535</x><y>730</y><w>100</w><h>55</h></coordinates><panel_attributes>lt=-
+m1=0..n
+è assegnato ^
+m2=1..n
+   </panel_attributes><additional_attributes>10;10;10;80;180;80</additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>320</y><w>120</w><h>25</h></coordinates><panel_attributes>lt=-
+allegato &gt;
+m2=1
+m1=0..n
+</panel_attributes><additional_attributes>10;20;220;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>60</x><y>310</y><w>85</w><h>35</h></coordinates><panel_attributes>Documentazione
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>480</y><w>190</w><h>210</h></coordinates><panel_attributes>lt=-
+m1=  0..1
+è assegnato &gt;
+m2=0..n
+   </panel_attributes><additional_attributes>10;10;10;390;360;390</additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>215</y><w>120</w><h>105</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;70;10;70;190;220;190</additional_attributes></element><element><id>UMLNote</id><coordinates><x>25</x><y>200</y><w>120</w><h>90</h></coordinates><panel_attributes>Evento ...
+bg=blue
+Al momento della conferma del menu' 
+l'evento risulta in corso ovvero iniziano
+i preparativi. L'evento non è piu' in corso
+nel momento in cui termina.
+Scheda indica se l'evento è una "bozza", 
+è una bozza quando il menu' non è stato 
+ancora confermato. Quando è scheda,
+quindi, possiamo modificare i dati senza 
+ripercussioni, altrimenti la modifica 
+comporterà una penale. </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>250</x><y>165</y><w>100</w><h>40</h></coordinates><panel_attributes>Proposta di modifica
+--
+voce: Voce</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>295</x><y>100</y><w>15</w><h>75</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;130;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>245</x><y>95</y><w>125</w><h>20</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>230;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>85</y><w>100</w><h>40</h></coordinates><panel_attributes>Proposta di aggiunta
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>150</x><y>85</y><w>100</w><h>40</h></coordinates><panel_attributes>Proposta di eliminazione
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>295</x><y>200</y><w>95</w><h>40</h></coordinates><panel_attributes>lt=-
+modifica &gt;
+m2=0..n
+m1=1</panel_attributes><additional_attributes>170;50;10;50;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>155</x><y>180</y><w>335</w><h>565</h></coordinates><panel_attributes>lt=-
+si riferisce v
+m2=0..n
+m1=1</panel_attributes><additional_attributes>650;1100;10;1100;10;10;190;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>60</x><y>380</y><w>85</w><h>35</h></coordinates><panel_attributes>Penale
+--
+descrizione: testo</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>360</y><w>120</w><h>55</h></coordinates><panel_attributes>lt=-
+
+  si riferisce &gt;
+m2=1
+m1=0..n
+</panel_attributes><additional_attributes>10;80;90;80;90;20;220;20</additional_attributes></element><element><id>UMLNote</id><coordinates><x>370</x><y>760</y><w>100</w><h>45</h></coordinates><panel_attributes>Servizio ...
+bg=blue
+L'attributo confermato si riferisce 
+alla conferma del menu', assume 
+quindi valore "si" quando il menu' 
+viene confermato </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>465</x><y>730</y><w>55</w><h>65</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>90;10;90;110;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>435</x><y>540</y><w>375</w><h>235</h></coordinates><panel_attributes>lt=-
+m1=0..n
+è assegnato ^
+m2=0..n
+   </panel_attributes><additional_attributes>10;20;730;20;730;440;590;440</additional_attributes></element><element><id>Relation</id><coordinates><x>425</x><y>635</y><w>95</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=1
+
+si riferisce &gt;
+m2=1
+    </panel_attributes><additional_attributes>10;10;50;10;50;60;160;60;160;80</additional_attributes></element></diagram>

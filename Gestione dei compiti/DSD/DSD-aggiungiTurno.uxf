@@ -1,0 +1,55 @@
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLGeneric</id><coordinates><x>351</x><y>18</y><w>243</w><h>45</h></coordinates><panel_attributes>CatERingAppManager.eventManager:
+EventManager</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>135</x><y>0</y><w>54</w><h>99</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>153</x><y>27</y><w>27</w><h>918</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;1000</additional_attributes></element><element><id>Relation</id><coordinates><x>468</x><y>54</y><w>27</w><h>900</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;980</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>468</x><y>99</y><w>18</w><h>774</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>0</x><y>180</y><w>1602</w><h>738</h></coordinates><panel_attributes>alt 
+[sb == null]
+--
+
+-.
+
+
+
+
+
+
+
+
+
+
+
+fontsize=11
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>153</x><y>189</y><w>333</w><h>36</h></coordinates><panel_attributes>lt=&lt;.
+throw ShiftBoardException</panel_attributes><additional_attributes>10;20;350;20</additional_attributes></element><element><id>Relation</id><coordinates><x>153</x><y>90</y><w>333</w><h>54</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+addShift(servizio, data, luogo, oraInizio, 
+oraFine, tPreparatorio, tServizio)
+</panel_attributes><additional_attributes>350;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>711</x><y>18</y><w>108</w><h>45</h></coordinates><panel_attributes>servizio:
+:Service</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1062</x><y>54</y><w>27</w><h>900</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;980</additional_attributes></element><element><id>Relation</id><coordinates><x>747</x><y>54</y><w>27</w><h>900</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;980</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1008</x><y>18</y><w>126</w><h>45</h></coordinates><panel_attributes>sb: 
+ShiftBoard</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>477</x><y>108</y><w>297</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+getShiftBoard()</panel_attributes><additional_attributes>310;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>477</x><y>135</y><w>297</w><h>36</h></coordinates><panel_attributes>lt=&lt;.
+sb</panel_attributes><additional_attributes>10;20;310;20</additional_attributes></element><element><id>Relation</id><coordinates><x>477</x><y>396</y><w>603</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+createShift(data, luogo, oraInizio, oraFine, tPreparatorio, tServizio)</panel_attributes><additional_attributes>650;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1206</x><y>18</y><w>171</w><h>45</h></coordinates><panel_attributes>receivers:
+EventEventReceiver
+
+fg=magenta</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1278</x><y>54</y><w>27</w><h>900</h></coordinates><panel_attributes>lt=.
+fg=magenta</panel_attributes><additional_attributes>10;10;10;980</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>477</x><y>783</y><w>18</w><h>63</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>477</x><y>747</y><w>198</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+notifyShiftAdded(sb, shift)</panel_attributes><additional_attributes>20;60;50;60;50;10;10;10</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>369</x><y>792</y><w>990</w><h>63</h></coordinates><panel_attributes>for each
+rec in receivers
+fg=magenta</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>477</x><y>810</y><w>819</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+updateShiftAdded(sb, shift)</panel_attributes><additional_attributes>890;20;17;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1071</x><y>423</y><w>279</w><h>45</h></coordinates><panel_attributes>lt=&lt;.
+create(data, luogo, oraInizio, oraFine, 
+tPreparatorio, tServizio)</panel_attributes><additional_attributes>290;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1332</x><y>414</y><w>18</w><h>315</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1296</x><y>369</y><w>90</w><h>45</h></coordinates><panel_attributes>  shift: 
+Shift</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1341</x><y>450</y><w>135</w><h>45</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.data = data
+</panel_attributes><additional_attributes>10;30;40;30;40;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1341</x><y>486</y><w>207</w><h>45</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.luogo_svolgimento = luogo
+</panel_attributes><additional_attributes>10;30;40;30;40;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1341</x><y>522</y><w>180</w><h>45</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.oraInizio = oraInizio 
+</panel_attributes><additional_attributes>10;30;40;30;40;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1341</x><y>558</y><w>162</w><h>45</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.oraFine = oraFine </panel_attributes><additional_attributes>10;30;40;30;40;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1341</x><y>594</y><w>252</w><h>45</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.turno_preparatorio = tPreparatorio 
+</panel_attributes><additional_attributes>10;30;40;30;40;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1341</x><y>630</y><w>216</w><h>45</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.turno_di_servizio = tServizio </panel_attributes><additional_attributes>10;30;40;30;40;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1071</x><y>702</y><w>135</w><h>54</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+
+addShift(shift)
+</panel_attributes><additional_attributes>10;40;50;40;50;10;10;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1062</x><y>324</y><w>18</w><h>459</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1332</x><y>405</y><w>27</w><h>549</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;590</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1278</x><y>819</y><w>18</w><h>18</h></coordinates><panel_attributes>
+fg=magenta</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1071</x><y>675</y><w>279</w><h>36</h></coordinates><panel_attributes>lt=&lt;.
+shift</panel_attributes><additional_attributes>10;20;290;20</additional_attributes></element><element><id>Relation</id><coordinates><x>477</x><y>468</y><w>603</w><h>36</h></coordinates><panel_attributes>lt=&lt;.
+shift</panel_attributes><additional_attributes>10;20;650;20</additional_attributes></element></diagram>

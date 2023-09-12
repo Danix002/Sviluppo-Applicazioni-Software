@@ -1,0 +1,249 @@
+<diagram program="umletino" version="15.1"><zoom_level>7</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLGeneric</id><coordinates><x>273</x><y>14</y><w>189</w><h>35</h></coordinates><panel_attributes>CatERingAppManager.eventManager:
+EventManager</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>63</x><y>0</y><w>42</w><h>77</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>77</x><y>21</y><w>21</w><h>1120</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;1580</additional_attributes></element><element><id>Relation</id><coordinates><x>364</x><y>42</y><w>21</w><h>1092</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;1540</additional_attributes></element><element><id>Relation</id><coordinates><x>77</x><y>70</y><w>301</w><h>42</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+modifySingleEvent(evento, luogo, inizio, fine,
+ aggiungiServizi, rimuoviServizi, durata,
+partecipanti, tipo_evento, richieste)</panel_attributes><additional_attributes>410;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>364</x><y>77</y><w>14</w><h>1008</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>483</x><y>14</y><w>63</w><h>35</h></coordinates><panel_attributes>evento:
+:Event</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>504</x><y>42</y><w>21</w><h>1092</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;1540</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>0</x><y>140</y><w>1141</w><h>959</h></coordinates><panel_attributes>alt 
+[!user.isManager()]
+
+--
+
+-.
+
+
+
+
+-.
+
+
+-.
+
+fontsize=11
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>77</x><y>147</y><w>301</w><h>28</h></coordinates><panel_attributes>lt=&lt;.
+throw UseCaseLogicException</panel_attributes><additional_attributes>10;20;410;20</additional_attributes></element><element><id>Relation</id><coordinates><x>371</x><y>70</y><w>623</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+getCurrentUser()</panel_attributes><additional_attributes>870;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>371</x><y>84</y><w>616</w><h>28</h></coordinates><panel_attributes>lt=&lt;.
+user</panel_attributes><additional_attributes>10;20;860;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>826</x><y>14</y><w>168</w><h>35</h></coordinates><panel_attributes>CatERingAppManager.userManager:
+UserManager
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>973</x><y>42</y><w>21</w><h>1092</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;1540</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>973</x><y>91</y><w>14</w><h>14</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1057</x><y>42</y><w>21</w><h>1092</h></coordinates><panel_attributes>lt=.
+fg=magenta</panel_attributes><additional_attributes>10;10;10;1540</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1057</x><y>1036</y><w>14</w><h>14</h></coordinates><panel_attributes>
+fg=magenta</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1001</x><y>14</y><w>133</w><h>35</h></coordinates><panel_attributes>receivers:
+EventEventReceiver
+
+fg=magenta</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>287</x><y>1022</y><w>812</w><h>49</h></coordinates><panel_attributes>for each
+rec in receivers
+fg=magenta</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>378</x><y>1029</y><w>693</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+updateModifySingleEvent(EventManager.currentRecursiveEvent, evento)</panel_attributes><additional_attributes>970;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>371</x><y>1001</y><w>14</w><h>49</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>371</x><y>987</y><w>182</w><h>42</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+notifyModifySingleEvent(evento)</panel_attributes><additional_attributes>20;40;60;40;60;10;10;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>504</x><y>308</y><w>14</w><h>91</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>238</x><y>763</y><w>707</w><h>182</h></coordinates><panel_attributes>for each
+serv in aggiungiServizi
+--
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>672</x><y>777</y><w>63</w><h>35</h></coordinates><panel_attributes>servizio:
+:Service</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>693</x><y>805</y><w>21</w><h>329</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;450</additional_attributes></element><element><id>Relation</id><coordinates><x>371</x><y>770</y><w>147</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+createService(serv)</panel_attributes><additional_attributes>190;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>511</x><y>777</y><w>175</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.
+create(serv)</panel_attributes><additional_attributes>230;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>511</x><y>791</y><w>175</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;.
+servizio</panel_attributes><additional_attributes>10;20;230;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>693</x><y>812</y><w>14</w><h>112</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>700</x><y>812</y><w>119</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.tipo = serv.tipo</panel_attributes><additional_attributes>10;30;40;30;40;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>700</x><y>840</y><w>161</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.dataInizio = serv.dataInizio
+</panel_attributes><additional_attributes>10;30;40;30;40;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>700</x><y>868</y><w>154</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.dataFine = serv.dataFine
+</panel_attributes><additional_attributes>10;30;40;30;40;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>700</x><y>896</y><w>126</w><h>35</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+this.confermato = no
+</panel_attributes><additional_attributes>10;30;40;30;40;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>511</x><y>924</y><w>378</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+add(servizio)</panel_attributes><additional_attributes>520;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>833</x><y>266</y><w>98</w><h>28</h></coordinates><panel_attributes>Services:
+ArrayList&lt;Service&gt;
+fontsize=12</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>875</x><y>287</y><w>21</w><h>847</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;1190</additional_attributes></element><element><id>Text</id><coordinates><x>0</x><y>182</y><w>105</w><h>42</h></coordinates><panel_attributes>[currentRecursiveEvent == null &amp;&amp; !currentRecursiveEvent.cointains(evento)]
+style=wordwrap
+fontsize=11</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>77</x><y>189</y><w>301</w><h>28</h></coordinates><panel_attributes>lt=&lt;.
+throw RecurrentEventException</panel_attributes><additional_attributes>10;20;410;20</additional_attributes></element><element><id>Text</id><coordinates><x>0</x><y>224</y><w>98</w><h>35</h></coordinates><panel_attributes>[!evento.isScheda() &amp;&amp;
+evento.isInCorso()]
+style=wordwrap
+fontsize=11</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>77</x><y>224</y><w>301</w><h>28</h></coordinates><panel_attributes>lt=&lt;.
+throw EventException</panel_attributes><additional_attributes>10;20;410;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>63</x><y>301</y><w>882</w><h>126</h></coordinates><panel_attributes>for each
+serv in rimuoviServizi
+--
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>70</x><y>329</y><w>560</w><h>84</h></coordinates><panel_attributes>alt
+evento.contains(serv)
+--
+
+
+-.
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>77</x><y>378</y><w>301</w><h>28</h></coordinates><panel_attributes>lt=&lt;.
+throw EventException</panel_attributes><additional_attributes>10;20;410;20</additional_attributes></element><element><id>Relation</id><coordinates><x>371</x><y>336</y><w>147</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+removeService(serv)</panel_attributes><additional_attributes>190;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>875</x><y>308</y><w>14</w><h>84</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>511</x><y>343</y><w>378</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+remove(serv)</panel_attributes><additional_attributes>520;20;10;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>35</x><y>259</y><w>966</w><h>182</h></coordinates><panel_attributes>[rimuoviServizi != null]
+--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fontsize=11
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>371</x><y>462</y><w>147</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+setLuogo(luogo)</panel_attributes><additional_attributes>190;20;10;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>238</x><y>455</y><w>707</w><h>35</h></coordinates><panel_attributes>[luogo != null]
+--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fontsize=11
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>238</x><y>497</y><w>707</w><h>35</h></coordinates><panel_attributes>[inizio != null]
+--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fontsize=11
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>371</x><y>504</y><w>147</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+setInizio(inizio)</panel_attributes><additional_attributes>190;20;10;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>238</x><y>539</y><w>707</w><h>35</h></coordinates><panel_attributes>[fine != null]
+--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fontsize=11
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>371</x><y>546</y><w>147</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+setFine(fine)</panel_attributes><additional_attributes>190;20;10;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>238</x><y>581</y><w>707</w><h>35</h></coordinates><panel_attributes>[durata != null]
+--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fontsize=11
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>371</x><y>588</y><w>147</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+setDurata(durata)</panel_attributes><additional_attributes>190;20;10;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>238</x><y>623</y><w>707</w><h>35</h></coordinates><panel_attributes>[partecipanti != null]
+--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fontsize=11
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>238</x><y>665</y><w>707</w><h>35</h></coordinates><panel_attributes>[tipo_evento != null]
+--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fontsize=11
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>238</x><y>707</y><w>707</w><h>35</h></coordinates><panel_attributes>[richieste != null]
+--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fontsize=11
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>371</x><y>630</y><w>147</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+setPartecipanti(partecipanti)</panel_attributes><additional_attributes>190;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>371</x><y>672</y><w>147</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+setTipo(tipo_evento)</panel_attributes><additional_attributes>190;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>371</x><y>714</y><w>147</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+setRichieste(richieste)</panel_attributes><additional_attributes>190;20;10;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>140</x><y>749</y><w>833</w><h>217</h></coordinates><panel_attributes>[aggiungiServizi != null]
+--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fontsize=11
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>504</x><y>462</y><w>14</w><h>21</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>504</x><y>504</y><w>14</w><h>21</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>504</x><y>546</y><w>14</w><h>21</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>504</x><y>588</y><w>14</w><h>21</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>504</x><y>630</y><w>14</w><h>21</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>504</x><y>672</y><w>14</w><h>21</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>504</x><y>714</y><w>14</w><h>21</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>504</x><y>770</y><w>14</w><h>182</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>875</x><y>868</y><w>14</w><h>84</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element></diagram>
