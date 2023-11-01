@@ -1,5 +1,5 @@
 # Sviluppo-Applicazioni-Software
-Pattern Svolti + Progetto a.s. 22/23 - Università degli studi di Torino
+Pattern Svolti e progetto a.s. 22/23 - Università degli studi di Torino
 
 Pattern Grasp svolti:
   - Pattern Creator;
@@ -11,10 +11,10 @@ Pattern Grasp svolti:
 Pattern GoF:
   - Pattern Strategy (comportamentale);
   - Pattern Visitor (comportamentale);
+  - Pattern State (comportamentale);
+  - Pattern Observer (comportamentale).
   - Pattern Abstract Factory (creazionale);
   - Pattern Singleton (creazionale);
-  - Pattern State (comportamentale);
   - Pattern Adapter (strutturale);
   - Pattern Composite (strutturale);
   - Pattern Decorator (strutturale);
-  - Pattern Observer (comportamentale).
