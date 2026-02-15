@@ -1,1 +1,25 @@
-# Sviluppo-Applicazioni-Software
+# Project Software Application Development: Event Management and Kitchen Task Administration
+
+## 1. Project Description
+The system is engineered to assist key catering personnel, specifically the **Organizer** and the **Chef**, in the comprehensive planning and execution of events. The software architecture is bifurcated into two primary modules:
+
+* **Event Management**: This module encompasses the entire lifecycle of an event, beginning with the compilation of a detailed event information card. It facilitates the selection of the chef, the assignment of service staff, and the formal confirmation of menus, concluding with the final termination of the event and the recording of relevant notes.
+* **Kitchen Task Management**: Focused on post-confirmation operations, this module allows the Chef to generate a **Summary Sheet** for each specific service. It enables the Chef to assign kitchen duties—such as recipes and preparations—to cooks and coordinate work shifts within the kitchen environment.
+
+## 2. Documentation (Analysis and Design)
+The initial phase of the project involved the development of technical documentation essential for defining the business logic and domain requirements:
+
+* **Detailed Use Cases (UC)**: These documents delineate the interactions between the primary actors (Chef and Organizer) and the system. They include the main success scenarios, functional extensions—such as the management of recurring events—and exception handling, such as cases where a requested cook is already occupied with another task.
+* **Operation Contracts**: These provide formal specifications for system functions, detailing the necessary **pre-conditions** (e.g., the menu must be approved) and the resulting **post-conditions** (e.g., a new task instance is created and associated with a service) for operations such as `assignTask` or `confirmMenu`.
+* **Domain Models**: Conceptual diagrams that define the core entities of the system and their respective relationships, including **Event**, **Service**, **Menu**, **Summary Sheet**, and **Task**.
+* **Sequence Diagrams (SSD and DSD)**: These model the exchange of messages between the user and the system (System Sequence Diagrams) or between internal objects (Design Sequence Diagrams). They illustrate the realization of system operations, such as generating a summary sheet or assigning a specific task.
+* **Design Class Diagram (DCD)**: This diagram represents the structural blueprint of the system. It specifies the software classes, their internal attributes, and method signatures (including visibility and return types). It explicitly maps the relationships—such as associations, dependencies, and generalizations—ensuring that the domain logic is correctly translated into a modular object-oriented structure.
+
+## 3. Architectural Design and Implementation Patterns
+
+Analysis of the **Design Class Diagram (DCD)** reveals the application of several fundamental software engineering patterns and GRASP (General Responsibility Assignment Software Patterns) principles:
+* **Observer Pattern**: This is the most prominent pattern within the DCD, evidenced by the `EventManager` acting as a **Subject** that maintains a collection of `receivers` of the type `EventEventReceiver`. The inclusion of methods such as `addReceiver`, `removeReceiver`, and specific notification triggers like `notifySummarySheetCreated` and `notifyAssignTask` demonstrates a rigorous decoupling of the business logic from external components such as persistence handlers or user interfaces.
+* **Controller Pattern**: The architecture utilizes dedicated "Manager" classes—specifically `EventManager`, `MenuManager`, and `UserManager`—to orchestrate system workflows. These entities serve as the primary interface between actor-driven events and the internal domain logic, encapsulating the complex coordination required for event and task lifecycles.
+* **Information Expert (GRASP)**: Responsibility for data manipulation is assigned to classes possessing the requisite information to fulfill the task. For instance, the `SummarySheet` class encapsulates the management of its own `Task` collection through methods like `addTask`, `removeTask`, and `move`, ensuring that the logic resides where the data is held. Similarly, the `Menu` class manages its constituent `Sections` and `MenuItems`.
+* **Generalization and Polymorphism**: The DCD implements a clear inheritance hierarchy for kitchen operations, where `Mansione di cucina` (Kitchen Task) serves as the base class for specialized entities such as `Recipe` and `Preparation`. This structural approach enables the system to interact with diverse culinary activities polymorphically.
+* **Creator (GRASP)**: The responsibility for instantiating new objects is logically assigned to their respective owners within the domain. This is exemplified by the `Service` class containing the `createSummarySheet` operation, identifying it as the entity responsible for the lifecycle of its associated summary documentation.
